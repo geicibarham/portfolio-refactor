@@ -4,7 +4,6 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Source Code Pro', monospace;
-    
 
 }
 
@@ -335,7 +334,7 @@ h2 {
     background-position: 80%;
     align-content: center;
     background-repeat: no-repeat;
-    padding-top: 50px;
+    padding-top: 10px;
 
 }
 
