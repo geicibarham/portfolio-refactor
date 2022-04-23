@@ -16,7 +16,7 @@
 //     return new Promise(resolve => setTimeout(resolve, ms))
 //   }
 
-//   typeSentence("Geciane Barham Web Developer!", "#sentence")
+//   typeSentence("Welcome To My Website!", "#sentence")
 
   
 // async function deleteSentence(eleRef) {
@@ -67,10 +67,4 @@ function scrollFunction() {
 }
 
 
-
-// function animation () {
-//  let anime= document.getElementById("anime")
-//   console.log(anime)
-// }
-// animation();
 

@@ -24,6 +24,8 @@
 
 }
 
+
+
 .name h3 {
 
     align-self: flex-start;
@@ -34,6 +36,27 @@ font-size: 15px;
 
 }
 
+.myname{
+
+    position: relative;
+  color: white;
+  font-size:40px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+
+}
+.web{
+    position: relative;
+    top:0;
+    color: white;
+    font-size: 25px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+  
+}
+
+
+.typing-container{
+    padding-top:0px;
+}
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -108,12 +131,7 @@ video {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 5;
-}
-
-.typing-container {
-    position: absolute;
-    z-index: 9999;
+    left: 0;
 }
 
 .video-wrapper {
@@ -125,8 +143,10 @@ video {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 80;
+    justify-content:center;
+    /* z-index: 80; */
+ 
+ 
 }
 
 

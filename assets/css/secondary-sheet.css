@@ -79,6 +79,11 @@
 
 }
 
+div .card {
+
+    background-color: #000000;
+}
+
 #projects {
     background-image: url(../images//se.png);
     background-size: cover;
@@ -88,11 +93,7 @@
     background-repeat: no-repeat;
     padding-top: 10px;
 
-}
 
-div .card {
-
-    background-color: #000000;
 }
 
 .card-title {
@@ -104,7 +105,7 @@ div .card {
     width: 90%;
     margin: auto;
     align-items: baseline;
-  
+
 }
 
 .card-title h3 {
@@ -117,7 +118,7 @@ div .card {
 
     font-size: 18px;
     width: 60%;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     color: #ff6337;
     font-weight: lighter;
     margin-right: 10px;
@@ -141,64 +142,76 @@ div .card {
     flex-direction: row;
     padding-bottom: 50px;
     margin-bottom: 80px;
-
-    justify-content: center;
     border: none;
     background-color: #000000;
- align-items: center;
+    /* background-color: pink; */
+    align-items: center;
     height: 100%;
+    justify-content: center;
 }
 
-.pet{
+
+.pet {
+
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     padding-top: 30px;
     margin-left: 30px;
-;
-  
+    margin: auto;
+
 }
 
-    .pet:hover{
+@media (hover: hover) {
+
+
+    .pet:hover {
         -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out
+        transform: scale(1.1);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out
     }
+
+    .scout {
+        margin-bottom: 20px;
+        margin-left: 35px;
+        margin-top: 20px;
+
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        padding-top: 30px;
+        margin-right: 20px;
+    }
+
+
+    .scout:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out
+    }
+
+}
 
 .card img {
     width: 500px;
     height: 400px;
-}
+    margin-right: 25px;
+    margin-left: 20px;
 
-.scout {
-    margin-bottom: 20px;
-    margin-left: 35px;
-    margin-top: 20px;
-
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    padding-top: 30px;
-    margin-right: 20px;
-}
-
-.scout:hover{
-    -webkit-transform: scale(1.1);
-transform: scale(1.1);
--webkit-filter: grayscale(100%);
-filter: grayscale(100%);
--webkit-transition: .3s ease-in-out;
-transition: .3s ease-in-out
 }
 
 .quiz {
     margin-right: 25px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .third {
@@ -211,12 +224,25 @@ transition: .3s ease-in-out
 
 /* footer starts */
 footer {
-    padding: 50px;
+    /* padding: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     bottom: 0;
+    background-color: #0b132c; */
+
+    display: flex;
+    justify-content: center;
+    background-image: url(../images//se.png);
+    background-size: cover;
+    justify-content: center;
+    background-position: 80%;
+    align-content: center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding: 100px;
+
 }
 
 /* footer imgs */
@@ -256,44 +282,109 @@ footer a {
         margin: 0px;
     }
 
-    .work {
+    #projects {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: column;
         align-content: center;
         justify-content: space-around;
+
     }
 
-    .run-buddy,
-    .horiseon,
-    .robot {
+    .pet,
+    .scout,
+    .silly img {
         padding-bottom: 20px;
+    }
+
+    .pet img {
+        overflow: hidden;
+    }
+
+    img .pet {
+        width: max-content;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 775px) {
+
+
+        #anime {
+            font-size: 14px;
+        }
+
+        .html,
+        .js,
+        .sql,
+        .nodejs,
+        .css,
+        .git {
+        
+            padding: 5px;
+            height: 20%;
+        }
+
+        .nodejs img {
+            height: 75px;
+            padding-bottom: 0px;
+        }
+
+        h3 {
+            font-size: 13px;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .card img {
+            width: 80%;
+        }
+
+        .description,
+        .description2 {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: lighter;
+
+        }
+
+        .pet {
+            width: 10%;
+            height: auto;
+        }
+
+
+        .description .description2 {
+            font-size: 14px;
+            color: white;
+            background-color: aquamarine;
+            display: none;
+        }
     }
 
     @media screen and (max-width: 575px) {
 
-        header {
-            position: relative;
-            padding-bottom: 0;
-            justify-content: center;
+
+
+        #projects {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
         }
 
-        h1 {
-            text-shadow: 0 0 5px black;
+        .card {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
         }
 
-        .hero {
-            align-items: flex-end;
-            justify-content: center;
-
-        }
-
-        .hero img {
-            width: max-content;
-            right: 0;
-            padding: 0;
-        }
-
+ 
         header nav ul li a {
             justify-content: flex-start;
             font-size: 20px;
@@ -312,23 +403,6 @@ footer a {
             justify-content: center;
         }
 
-        .work {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-
-        .run-buddy {
-            padding-right: 35px;
-            padding-left: 35px;
-            padding-bottom: 10px;
-        }
-
-        .horiseon,
-        .robot {
-            padding-right: 40px;
-            padding-left: 40px;
-            padding-bottom: 10px;
+      
         }
     }
-}
