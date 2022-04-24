@@ -7,13 +7,14 @@
 
 }
 
-#navbar {
-    background-color: #302431;
-    background-color: black;
 
+#navbar {
+   
+    background-color: black;
     position: fixed;
-    top: -70px;
+    top: -50px;
     width: 100%;
+    padding: 0;
     transition: top 0.3s;
     display: flex;
     flex-wrap: wrap;
@@ -36,27 +37,6 @@ font-size: 15px;
 
 }
 
-.myname{
-
-    position: relative;
-  color: white;
-  font-size:40px;
-  text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
-
-}
-.web{
-    position: relative;
-    top:0;
-    color: white;
-    font-size: 25px;
-    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
-  
-}
-
-
-.typing-container{
-    padding-top:0px;
-}
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -73,7 +53,6 @@ font-size: 15px;
     margin-right: 0px;
     justify-content: flex-end;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -81,6 +60,16 @@ font-size: 15px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-right: 10px;
 
 }
 
@@ -123,6 +112,23 @@ font-size: 15px;
 
     margin-right: 50px;
 }
+.myname{
+
+    position: relative;
+  color: white;
+  font-size:40px;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+
+}
+.web{
+    position: relative;
+    top:0;
+    color: white;
+    font-size: 25px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+  
+}
+
 
 video {
 
@@ -225,11 +231,11 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
     margin: 10px 10px;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
     line-height: 24pt;
     font-size: 12pt;
-    padding: 50px;
+    padding: 0px;
     background-color: #e45b47;
     margin-bottom: 0;
 
