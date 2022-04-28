@@ -7,8 +7,9 @@
     flex-direction: row;
     background-color: #202020;
     justify-content: space-around;
+    width: 100%;
 }
-
+/* 
 .animate__fadeInDown {
     display: inline-block;
     margin: 0 0.5rem;
@@ -22,7 +23,7 @@
     padding: 10px;
     animation-iteration-count: 2;
 
-}
+} */
 
 #techy {
     padding: 10px;
@@ -32,6 +33,7 @@
     justify-content: center;
     font-size: 35px;
     font-weight: lighter;
+    width: 100%;
 
 }
 
@@ -122,6 +124,8 @@ div .card {
     color: #ff6337;
     font-weight: lighter;
     margin-right: 10px;
+    padding-bottom: 20px;
+  
 }
 
 .description2 {
@@ -133,6 +137,14 @@ div .card {
     font-weight: lighter;
     font-size: 18px;
     margin-right: 10px;
+}
+
+.techpro{
+    font-weight: lighter;
+    font-size: 15px;
+    color:#ffa952;
+  
+  
 }
 
 .card {
@@ -268,7 +280,6 @@ footer a {
     text-decoration: none;
 }
 
-/* Media Queries */
 @media screen and (max-width: 980px) {
     header {
         position: relative;
