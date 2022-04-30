@@ -19,7 +19,7 @@ function scrollFunction() {
 }
 
 
-async function typeSentence(sentence, eleRef, delay = 250) {
+async function typeSentence(sentence, eleRef, delay = 70) {
   const letters = sentence.split("");
   let i = 0;
   while(i < letters.length) {
@@ -38,5 +38,8 @@ function waitForMs(ms) {
 
 
 
-
+let geici = () => {
 document.getElementById("test").addEventListener("scroll",typeSentence("Hi! I'm Geici!", "#sentence") );
+}
+
+const myTimeout = setTimeout(geici, 2000);
