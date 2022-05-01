@@ -1,28 +1,23 @@
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
 
-  
   let nav = document.getElementById("navbar")
 
-
-  if ( document.documentElement.scrollTop > 300){
-
+  if (document.documentElement.scrollTop > 300) {
     nav.setAttribute("class", "ge")
   }
 
   if (document.documentElement.scrollTop < 300) {
-    nav.setAttribute("class" , "hide")
+    nav.setAttribute("class", "hide")
 
   }
 }
-
-
 async function typeSentence(sentence, eleRef, delay = 70) {
   const letters = sentence.split("");
   let i = 0;
-  while(i < letters.length) {
+  while (i < letters.length) {
     await waitForMs(delay);
     $(eleRef).append(letters[i]);
     i++
@@ -30,16 +25,11 @@ async function typeSentence(sentence, eleRef, delay = 70) {
   return;
 }
 
-
 function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-
-
-
 let geici = () => {
-document.getElementById("test").addEventListener("scroll",typeSentence("Hi! I'm Geici!", "#sentence") );
+  document.getElementById("test").addEventListener("scroll", typeSentence("Hi! I'm Geici!", "#sentence"));
 }
-
 const myTimeout = setTimeout(geici, 2000);
